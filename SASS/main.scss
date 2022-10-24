@@ -1,0 +1,158 @@
+$couleurOr : #B7915B;
+$couleurJaune: #FAD838;
+$couleurNoir : #0b0b0b;
+$couleurVerte: #1CBC9E;
+$couleurVerte2: #68BF22;
+$couleurVerte3: #3AD6C1;
+$couleurRose: #EE81EE;
+$couleurBleuGris: #36475E;
+
+.test {
+    width: 250px;
+    height: 250px;
+    background: $couleurOr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: $couleurNoir;
+        width: 100px;
+        height: 18px;
+        background-color: white;
+        text-align: center;
+
+        &:hover {
+            box-shadow: 5px 5px 5px $couleurNoir;
+            cursor: pointer;
+            width: 105px;
+            height: 20px;
+        }
+    }
+}
+
+.test2 {
+    margin-top: 10px;
+    width: 250px;
+    height: 60px;
+    background: $couleurVerte;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .styled {
+        border: solid white 1px;
+        line-height: 3;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        background-color: #1CBC9E;
+    
+        &:hover {
+            background-color: #008a71;
+            color: white;
+            cursor: pointer;
+        }
+
+        &:focus {
+            background-color: white;
+            color: $couleurVerte;
+            cursor: pointer;
+        }
+    }
+}
+
+.test3 {
+    .gauche {
+        margin-top: 200px;
+        width: 450px;
+        height: 60px;
+        background: $couleurRose;
+        transition: all 1s ease-in-out;
+    }
+
+    .centre {
+        margin-top: 10px;
+        width: 450px;
+        height: 60px;
+        background: $couleurRose;
+        transition: all 2s ease-in-out;
+    }
+    
+    .droite {
+        margin-top: 10px;
+        width: 450px;
+        height: 60px;
+        background: $couleurRose;
+        transition: all 1s ease-in-out;
+    }
+
+    &:hover {
+
+        .gauche {
+            transform: rotate(45deg);
+            transition-duration: 1s;
+        }
+
+        .centre {
+            opacity: 0;
+            transition-duration: 1s;
+        }
+
+        .droite {
+            transform: rotate(-45deg);
+            transition-duration: 1s;
+            margin-top: -125px;
+        }
+    }
+}
+
+.animation1 {
+    width: 250px;
+    height: 250px;
+    margin-top: 200px;
+    background: $couleurVerte3;
+    animation: animation1 5s infinite;
+
+    @keyframes animation1 {
+        0% {background-color: $couleurVerte3;}
+        50% {background-color: $couleurVerte;}
+        100% {background-color: $couleurVerte2}
+    }
+}
+
+.animation2 {
+    width: 450px;
+    height: 250px;
+    margin-top: 10px;
+    background: #6F92B0;
+
+    .soleil {
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        width: 30px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: $couleurJaune;
+        animation: animationSoleil 3s infinite alternate;
+
+        @keyframes animationSoleil {
+            0% {margin-left: 0px;}
+            100% {margin-left: 240px;}
+        }
+    }
+
+    .nuages {
+        color: white;
+        padding-top: 15px;
+        animation: animationSoleil 3s infinite alternate;
+
+        @keyframes animationSoleil {
+            0% {margin-left: 0px;}
+            100% {margin-left: 240px;}
+        }
+    }
+}

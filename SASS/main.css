@@ -1,0 +1,165 @@
+.test {
+  width: 250px;
+  height: 250px;
+  background: #B7915B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test p {
+  color: #0b0b0b;
+  width: 100px;
+  height: 18px;
+  background-color: white;
+  text-align: center;
+}
+.test p:hover {
+  box-shadow: 5px 5px 5px #0b0b0b;
+  cursor: pointer;
+  width: 105px;
+  height: 20px;
+}
+
+.test2 {
+  margin-top: 10px;
+  width: 250px;
+  height: 60px;
+  background: #1CBC9E;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.test2 .styled {
+  border: solid white 1px;
+  line-height: 3;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  background-color: #1CBC9E;
+}
+.test2 .styled:hover {
+  background-color: #008a71;
+  color: white;
+  cursor: pointer;
+}
+.test2 .styled:focus {
+  background-color: white;
+  color: #1CBC9E;
+  cursor: pointer;
+}
+
+.test3 .gauche {
+  margin-top: 200px;
+  width: 450px;
+  height: 60px;
+  background: #EE81EE;
+  transition: all 1s ease-in-out;
+}
+.test3 .centre {
+  margin-top: 10px;
+  width: 450px;
+  height: 60px;
+  background: #EE81EE;
+  transition: all 2s ease-in-out;
+}
+.test3 .droite {
+  margin-top: 10px;
+  width: 450px;
+  height: 60px;
+  background: #EE81EE;
+  transition: all 1s ease-in-out;
+}
+.test3:hover .gauche {
+  transform: rotate(45deg);
+  transition-duration: 1s;
+}
+.test3:hover .centre {
+  opacity: 0;
+  transition-duration: 1s;
+}
+.test3:hover .droite {
+  transform: rotate(-45deg);
+  transition-duration: 1s;
+  margin-top: -125px;
+}
+
+.animation1 {
+  width: 250px;
+  height: 250px;
+  margin-top: 200px;
+  background: #3AD6C1;
+  -webkit-animation: animation1 5s infinite;
+          animation: animation1 5s infinite;
+}
+@-webkit-keyframes animation1 {
+  0% {
+    background-color: #3AD6C1;
+  }
+  50% {
+    background-color: #1CBC9E;
+  }
+  100% {
+    background-color: #68BF22;
+  }
+}
+@keyframes animation1 {
+  0% {
+    background-color: #3AD6C1;
+  }
+  50% {
+    background-color: #1CBC9E;
+  }
+  100% {
+    background-color: #68BF22;
+  }
+}
+
+.animation2 {
+  width: 450px;
+  height: 250px;
+  margin-top: 10px;
+  background: #6F92B0;
+}
+.animation2 .soleil {
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  width: 30px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #FAD838;
+  -webkit-animation: animationSoleil 3s infinite alternate;
+          animation: animationSoleil 3s infinite alternate;
+}
+@-webkit-keyframes animationSoleil {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 240px;
+  }
+}
+@keyframes animationSoleil {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 240px;
+  }
+}
+.animation2 .nuages {
+  color: white;
+  padding-top: 15px;
+  -webkit-animation: animationSoleil 3s infinite alternate;
+          animation: animationSoleil 3s infinite alternate;
+}
+@keyframes animationSoleil {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 240px;
+  }
+}/*# sourceMappingURL=main.css.map */
